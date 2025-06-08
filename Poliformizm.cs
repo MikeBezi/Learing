@@ -31,12 +31,12 @@ public class Dog : Animal
     
     public override void MakeSound()
     {
-        Console.WriteLine($"{Name}: HAU HAU! 🐕");
+        Console.WriteLine($"{Name}: HAU HAU!");
     }
     
     public override void Move()
     {
-        Console.WriteLine($"{Name} biega i macha ogonem! 🏃‍♂️");
+        Console.WriteLine($"{Name} biega i macha ogonem!");
     }
 }
 
@@ -46,12 +46,12 @@ public class Cat : Animal
     
     public override void MakeSound()
     {
-        Console.WriteLine($"{Name}: Miau miau~ 🐱");
+        Console.WriteLine($"{Name}: Miau miau~");
     }
     
     public override void Move()
     {
-        Console.WriteLine($"{Name} skrada się cicho... 🐾");
+        Console.WriteLine($"{Name} skrada się cicho...");
     }
 }
 
@@ -61,12 +61,12 @@ public class Bird : Animal
     
     public override void MakeSound()
     {
-        Console.WriteLine($"{Name}: Ćwir ćwir! 🐦");
+        Console.WriteLine($"{Name}: Ćwir ćwir!");
     }
     
     public override void Move()
     {
-        Console.WriteLine($"{Name} leci wysoko w niebie! 🕊️");
+        Console.WriteLine($"{Name} leci wysoko w niebie!");
     }
 }
 
@@ -80,7 +80,7 @@ public class Guitar : IPlayable
 {
     public void Play()
     {
-        Console.WriteLine("🎸 *brzęk brzęk* Gra gitara!");
+        Console.WriteLine("*brzęk brzęk* Gra gitara!");
     }
 }
 
@@ -88,7 +88,7 @@ public class Piano : IPlayable
 {
     public void Play()
     {
-        Console.WriteLine("🎹 *plin plon* Gra pianino!");
+        Console.WriteLine("*plin plon* Gra pianino!");
     }
 }
 
@@ -107,7 +107,7 @@ public class Program
             new Dog("Azor")
         };
         
-        Console.WriteLine("🔥 MAGIC POLIMORFIZMU:");
+        Console.WriteLine("MAGIC POLIMORFIZMU:");
         Console.WriteLine("Nie wiem jakie zwierzę, ale każde zrobi swoje!\n");
         
         // POLIMORFIZM W AKCJI - ta sama metoda, różne zachowania!
@@ -129,7 +129,7 @@ public class Program
             new Guitar()
         };
         
-        Console.WriteLine("🎵 Koncert polimorficzny:");
+        Console.WriteLine("Koncert polimorficzny:");
         foreach (IPlayable instrument in instrumenty)
         {
             instrument.Play(); // Każdy instrument gra inaczej!
@@ -139,7 +139,7 @@ public class Program
         Console.WriteLine("1. W czasie kompilacji: 'zwierze.MakeSound()' - kompilator wie tylko że to Animal");
         Console.WriteLine("2. W czasie działania: program sprawdza prawdziwy typ obiektu");
         Console.WriteLine("3. Wywołuje odpowiednią metodę override - Dog.MakeSound(), Cat.MakeSound() itp.");
-        Console.WriteLine("4. To jest POLIMORFIZM - jedno wywołanie, różne zachowania! 🎯");
+        Console.WriteLine("4. To jest POLIMORFIZM - jedno wywołanie, różne zachowania!");
         
         Console.WriteLine("\nNaciśnij cokolwiek...");
         Console.ReadKey();

@@ -43,6 +43,39 @@ namespace Nauka
             { 
                 Console.WriteLine(x); 
             }
+
+
+
+
+            List<int> liczby = new List<int> { 1, 2, 3, 4, 5 };
+            List<string> miasta = new List<string> { "Warszawa", "Kraków", "Gdańsk" };
+
+            List<string> imiona = new List<string>();
+
+            imiona.Add("Jan");
+            imiona.Add("Anna");
+            imiona.Add("Piotr");
+
+            Console.WriteLine($"Mam {imiona.Count} imion");
+            Console.WriteLine(imiona[0]);
+            Console.WriteLine(imiona[1]);     
+            Console.WriteLine(imiona[2]);
+
+
+            Console.WriteLine(imiona[imiona.Count - 1]); 
+
+            foreach (int liczba in liczby)
+            {
+                Console.WriteLine(liczba);
+            }
+
+
+            for (int i = 0; i < liczby.Count; i++)
+            {
+                Console.WriteLine($"Element {i}: {liczby[i]}");
+            }
+
+            Console.WriteLine(string.Join(", ", liczby)); 
         }
 
     }
