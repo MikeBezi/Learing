@@ -98,13 +98,13 @@ public class Program
     {
         Console.WriteLine("=== POLIMORFIZM Z DZIEDZICZENIEM ===\n");
         
-        // Tworzymy tablicę zwierząt - polimorfizm!
+        // POLIMORFICZNA TABLICA - wszystkie elementy to "Animal", ale w rzeczywistości różne typy!
         Animal[] zwierzeta = 
         {
-            new Dog("Burek"),
-            new Cat("Filemon"), 
-            new Bird("Tweety"),
-            new Dog("Azor")
+            new Dog("Burek"),      // Typ Dog, ale traktowany jak Animal
+            new Cat("Filemon"),    // Typ Cat, ale traktowany jak Animal
+            new Bird("Tweety"),    // Typ Bird, ale traktowany jak Animal
+            new Dog("Azor")        // Kolejny Dog, ale też traktowany jak Animal
         };
         
         Console.WriteLine("MAGIC POLIMORFIZMU:");
@@ -113,9 +113,12 @@ public class Program
         // POLIMORFIZM W AKCJI - ta sama metoda, różne zachowania!
         foreach (Animal zwierze in zwierzeta)
         {
-            // Kompilator nie wie który typ, ale w runtime wywoła właściwą metodę!
-            zwierze.MakeSound();
-            zwierze.Move();
+            // MAGIA POLIMORFIZMU:
+            // - Kompilator widzi: Animal.MakeSound() i Animal.Move()
+            // - W runtime program sprawdza prawdziwy typ obiektu
+            // - Wywołuje override metodę: Dog.MakeSound(), Cat.MakeSound() itp.
+            zwierze.MakeSound();   // Różne dźwięki w zależności od typu!
+            zwierze.Move();        // Różne sposoby poruszania!
             Console.WriteLine();
         }
         
