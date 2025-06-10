@@ -6,7 +6,9 @@
 - [Typy metod](#typy-metod)
 - [Przykłady klas](#przykłady-klas)
 - [Przykłady metod](#przykłady-metod)
+- [Przykłady Equals(), a ==](#equals(),-a-==)
 
+\
 ---
 
 ## Wprowadzenie
@@ -15,7 +17,8 @@ Nauka C#:
 - biblioteka,
 - listy,
 - poliformizm,
-- przeciążenie.
+- przeciążenie,
+- Equals.
 
 ## Typy klas
 - **abstract** - klasa abstrakcyjna
@@ -86,3 +89,6 @@ public class Fish : Animal
     // NIE nadpisuję MakeSound() - użyje się ta z Animal!
     // Fish będzie robić "Zwierzę robi jakiś dźwięk"
 }
+
+###Equals(), a ==
+Equals to metoda z klasy obiekt, a == to operator.

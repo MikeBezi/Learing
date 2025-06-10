@@ -25,7 +25,7 @@ public class Animal
 }
 
 // Klasy pochodne z override
-public class Dog : Animal
+public class Dog : Animal  
 {
     public Dog(string name) : base(name) { }
     
@@ -35,7 +35,7 @@ public class Dog : Animal
     }
     
     public override void Move()
-    {
+    { 
         Console.WriteLine($"{Name} biega i macha ogonem!");
     }
 }
@@ -60,7 +60,7 @@ public class Bird : Animal
     public Bird(string name) : base(name) { }
     
     public override void MakeSound()
-    {
+    { 
         Console.WriteLine($"{Name}: Ćwir ćwir!");
     }
     
@@ -112,7 +112,7 @@ public class Program
         
         // POLIMORFIZM W AKCJI - ta sama metoda, różne zachowania!
         foreach (Animal zwierze in zwierzeta)
-        {
+{
             // MAGIA POLIMORFIZMU:
             // - Kompilator widzi: Animal.MakeSound() i Animal.Move()
             // - W runtime program sprawdza prawdziwy typ obiektu
