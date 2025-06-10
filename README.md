@@ -89,6 +89,7 @@ public class Fish : Animal
     // NIE nadpisuję MakeSound() - użyje się ta z Animal!
     // Fish będzie robić "Zwierzę robi jakiś dźwięk"
 }
+```
 
 ###Equals(), a ==
 Equals to metoda z klasy obiekt, a == to operator.
