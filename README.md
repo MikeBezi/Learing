@@ -6,7 +6,7 @@
 - [Typy metod](#typy-metod)
 - [Przykłady klas](#przykłady-klas)
 - [Przykłady metod](#przykłady-metod)
-- [Przykłady Equals(), a ==](#equals(),-a-==)
+- [Przykłady Equals(), a ==](#equals-a-)
 
 \
 ---
@@ -91,5 +91,13 @@ public class Fish : Animal
 }
 ```
 
-###Equals(), a ==
+## Equals(), a ==
 Equals to metoda z klasy obiekt, a == to operator.
+
+**Kluczowe różnice:**
+- `==` - operator (można przeciążyć)
+- `.Equals()` - metoda (można nadpisać)
+- Dla typów wartościowych: oba porównują wartości
+- Dla typów referencyjnych: domyślnie oba porównują referencje
+- String ma specjalne zachowanie - oba porównują zawartość
+- `== null` jest bezpieczny, `.Equals(null)` wywala błąd!

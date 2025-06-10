@@ -86,8 +86,31 @@ public class Program
         Console.WriteLine();
         Console.WriteLine("To jest Equals");
         Console.WriteLine($"To jest Equals 2 null {proba.Equals(proba1)}");//False
+        Console.WriteLine();
+        Console.WriteLine();
+
+        string proba2 = null;
+        string proba3 = null;
+        Console.WriteLine("Typ string - z null");
+        Console.WriteLine("To jest ==");
+        Console.WriteLine($"To jest porównanie 2 null {proba2 == proba3}");//False
+        Console.WriteLine();
+        Console.WriteLine("To jest Equals");
+       // Console.WriteLine($"To jest Equals 2 null {proba2.Equals(proba3)}"); //Błąd
+        Console.WriteLine();
+        Console.WriteLine();
 
 
-
+        Console.WriteLine("Obiekty i null");
+        var obj1 = new JakisProgram("test");
+        JakisProgram nullObj = null;
+        Console.WriteLine("Typ obiekt - z null");
+        Console.WriteLine("To jest ==");
+        Console.WriteLine($"To jest porównanie 2 null {obj1 == nullObj}");//True
+        Console.WriteLine();
+        Console.WriteLine("To jest Equals");
+        //Console.WriteLine($"To jest Equals 2 null {obj1.Equals(nullObj)}"); //Błąd
+        Console.WriteLine();
+        Console.WriteLine();
     }
 }
